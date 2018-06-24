@@ -6,6 +6,11 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  title = "Kasun CodeSandbox";
+  title = "Kasun Code";
   users = ["Stave", "John", "Stephanie", "Kamal"];
+
+  onAddUser() {
+    console.log("function called");
+    //users.push("uuu");
+  }
 }

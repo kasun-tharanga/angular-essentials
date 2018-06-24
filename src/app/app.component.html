@@ -1,11 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-	<h1>
+<div>
+	<h1 style="text-align:center">
 		Welcome to {{ title }}!
 	</h1>
 
-<ul>
-	<li *ngFor="let user of users">{{user}}</li>
-</ul>
+	<input type="text" ng-model="newUser" style="text-align:center"/>
+	<button (click)="onAddUser()" >Add User</button>
+
+	<ul class="list-group" style="text-align:left">
+		<li class="list-group-item" *ngFor="let user of users">{{user}}</li>
+	</ul>
 
 </div>
