@@ -7,10 +7,11 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "Kasun Code";
+  newUser: string;
   users = ["Stave", "John", "Stephanie", "Kamal"];
 
-  onAddUser() {
-    console.log("function called");
-    //users.push("uuu");
+  onAddUser($scope) {
+    console.log("function called ");
+    this.users.push(this.newUser);
   }
 }
